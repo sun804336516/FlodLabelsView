@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.soundking.flodlabelsview.LabelsView
+        android:id="@+id/view_labels"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        app:labelBackground="@drawable/label_bg"
+        app:labelTextColor="#666666"
+        app:labelTextHeight="30dp"
+        app:labelTextPaddingLeft="10dp"
+        app:labelTextPaddingRight="10dp"
+        app:labelTextSize="15sp"
+        app:lineMargin="15dp"
+        app:wordMargin="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingStart="10dp"
+        android:paddingTop="30dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_down" />
+    </RelativeLayout>
+</merge>
